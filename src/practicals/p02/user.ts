@@ -8,7 +8,7 @@ export class User {
         return this.firstname = firstname
     }
 setLastname(lastname:string){
-    return this.lastname = lastname
+    return this.lastname = ' ' + lastname
 }
 setAge(age:number){
     return this.age = age
