@@ -4,13 +4,12 @@ export class User {
     private age?:number
     static BIRTH_YEAR: number = 2000
     getFullName(){
-    
     return this.firstname + " "  + this.lastname
 }
-    setFirstname(firstname:string){
+    setFirstname(firstname?:string){
         return this.firstname = firstname
     }
-setLastname(lastname:string){
+setLastname(lastname?:string){
     return this.lastname = lastname
 }
 setAge(age:number){
