@@ -18,6 +18,7 @@ getAge(){
 }
 
 getFullName(){
+    
     return this.firstname + " "  + this.lastname
 }
 }
