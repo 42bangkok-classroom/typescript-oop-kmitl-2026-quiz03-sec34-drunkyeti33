@@ -1,23 +1,31 @@
 export class User {
-    firstname?:string
-    lastname?:string
-    private age?:number
-    static BIRTH_YEAR: number = 2000
-    getFullName(){
-    return this.firstname + ' ' + this.lastname
-}
-    setFirstname(firstname?:string){
-        return this.firstname = firstname
-    }
-setLastname(lastname?:string){
-    return this.lastname = lastname
-}
-setAge(age:number){
-    return this.age = age
-}
-getAge(){
-    return this.age
-}
+  firstname?: string;
+  lastname?: string;
+  private age?: number;
+  static BIRTH_YEAR: number = 2000;
+  constructor() {
+    this.firstname = "";
+    this.lastname = "";
+    this.age = 0;
+  }
 
+  setFirstname(firstname: string): void {
+    this.firstname = firstname;
+  }
 
+  setLastname(lastname: string): void {
+    this.lastname = lastname;
+  }
+
+  setAge(age: number): void {
+    this.age = age;
+  }
+
+  getAge(): number {
+    return this.age;
+  }
+
+  getFullName(): string {
+    return `${this.firstname} ${this.lastname}`.trim();
+  }
 }
