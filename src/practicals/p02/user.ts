@@ -1,7 +1,7 @@
 export class User {
-  firstname?: string;
-  lastname?: string;
-  private age?: number;
+  private firstname: string;
+  private lastname: string;
+  private age: number;
   static BIRTH_YEAR: number = 2000;
   constructor() {
     this.firstname = "";
